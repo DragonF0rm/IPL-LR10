@@ -1,0 +1,18 @@
+<%= form_tag  url_for(controller: :proxy, action: :output), method: 'get', id: 'input_form' do %>
+  <h3>Введите необходимые аргументы</h3>
+  <%= label_tag :max, 'Сколько чисел рассматривать?' %>
+  <%= number_field_tag :max, nil, required: true, id: 'input_field' %>
+  <br>
+  <h3>Как парсить XML?</h3>
+  <%= radio_button_tag(:parse, "none", true, id: 'radio_none') %>
+  <%= label_tag(:parse_none, "Не парсить XML") %>
+  <br>
+  <%= radio_button_tag(:parse, "server", false, id: 'radio_server') %>
+  <%= label_tag(:parse_server, "Парсить XML с помощью промежуточного приложения") %>
+  <br>
+  <%= radio_button_tag(:parse, "browser", false, id: 'radio_browser') %>
+  <%= label_tag(:parse_browser, "Парсить XML с помощью браузера") %>
+  <br><br>
+  <%= submit_tag 'Проверить гипотезу Симона о факториале'%>
+
+<% end %>

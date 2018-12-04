@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <message>Гипотеза Симона выполняется</message>
+  <content type="array">
+    <content>
+      <fact>1*2*3=3!</fact>
+    </content>
+    <content>
+      <fact>2*3*4=4!</fact>
+    </content>
+    <content>
+      <fact>4*5*6=5!</fact>
+    </content>
+    <content>
+      <fact>8*9*10=6!</fact>
+    </content>
+  </content>
+</hash>
